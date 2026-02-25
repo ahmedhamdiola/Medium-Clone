@@ -7,7 +7,7 @@ import WriteButton from "./WriteButton.tsx";
 
 const NavBar = () => {
     return (
-    <nav className="flex border-b border-gray-200 justify-between">
+    <nav className="flex sticky top-0 bg-white border-b border-gray-200 justify-between">
         <div className="flex items-center">
         <Bars3Icon className="size-4 cursor-pointer opacity-30 ml-4 mt-1" />
         <Logo/>
@@ -18,7 +18,7 @@ const NavBar = () => {
             <WriteButton />
             <BellIcon className="size-4.5 opacity-40 hover:opacity-70 cursor-pointer"/>
             {/* Data here is put static as example .. in the future these should be dynamically assigned*/}
-            <img src={profilePic} alt="Ahmed Hamdy" className="object-cover w-6 h-6 rounded-full hover:brightness-80 cursor-pointer mr-3"/>
+            <img src={profilePic} alt="Ahmed Hamdy" className="object-cover size-6 rounded-full hover:brightness-80 cursor-pointer mr-3"/>
         </div>
     </nav>
     )
