@@ -18,7 +18,7 @@ const NavBar = () => {
             <WriteButton />
             <BellIcon className="size-4.5 text-gray-400 hover:text-gray-500 cursor-pointer"/>
             {/* Data here is put static as example .. in the future these should be dynamically assigned*/}
-            <img src={profilePic} alt="Ahmed Hamdy" className="object-cover size-6 rounded-full hover:brightness-80 cursor-pointer mr-3"/>
+            <img src={profilePic} alt="Ahmed Hamdy" className="object-cover size-5 rounded-full hover:brightness-80 cursor-pointer mr-3"/>
         </div>
     </nav>
     )

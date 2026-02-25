@@ -3,7 +3,8 @@ import {
     BookmarkIcon as BookmarkOutlined,
     UserIcon as UserOutlined,
     DocumentTextIcon as DocumentTextOutlined,
-    ChartBarIcon as ChartBarOutlined
+    ChartBarIcon as ChartBarOutlined,
+    UsersIcon as UsersOutlined
 } from "@heroicons/react/24/outline"
 
 import {
@@ -11,7 +12,9 @@ import {
     BookmarkIcon as BookmarkSolid,
     UserIcon as UserSolid,
     DocumentTextIcon as DocumentTextSolid,
-    ChartBarIcon as ChartBarSolid
+    ChartBarIcon as ChartBarSolid,
+    UsersIcon as UsersSolid
+
 } from "@heroicons/react/24/solid"
 
 export const OutlinedIcons = {
@@ -19,7 +22,8 @@ export const OutlinedIcons = {
     Bookmark: BookmarkOutlined,
     User: UserOutlined,
     Stories: DocumentTextOutlined,
-    Stats: ChartBarOutlined
+    Stats: ChartBarOutlined,
+    Following: UsersOutlined
 }
 
 export const SolidIcons = {
@@ -27,5 +31,7 @@ export const SolidIcons = {
     Bookmark: BookmarkSolid,
     User: UserSolid,
     Stories: DocumentTextSolid,
-    Stats: ChartBarSolid
+    Stats: ChartBarSolid,
+    Following: UsersSolid
+
 }

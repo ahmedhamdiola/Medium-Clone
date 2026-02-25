@@ -4,8 +4,8 @@ import SideBarButton from "./SideBarButton"
 
 const SideBar = () => {
     return (
-    <div className="pt-3">
-        <div>
+    <div className="pt-3 ">
+        <div className="">
         {
             <SideBarButton />
         }
