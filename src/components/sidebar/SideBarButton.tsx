@@ -1,31 +1,41 @@
 import { useEffect, useState } from "react"
-import { HomeIcon, BookmarkIcon, UserIcon, DocumentTextIcon, ChartBarIcon } from "@heroicons/react/24/outline"
-
+import {SolidIcons, OutlinedIcons} from "./utilities/icons.ts"
 const SideBarButton = () => {
     const options = [
-    {id: 1, name: 'Home', icon: HomeIcon},
-    {id: 2, name: 'Library', icon: BookmarkIcon}, 
-    {id: 3, name: 'Profile', icon: UserIcon},
-    {id: 4, name: 'Stories', icon: DocumentTextIcon},
-    {id: 5, name: 'Stats', icon: ChartBarIcon}]
-    const [active,setActive] = useState('home')
+    {id: 1, name: 'Home', iconOutlined: OutlinedIcons.Home, iconSolid: SolidIcons.Home},
+    {id: 2, name: 'Library', iconOutlined: OutlinedIcons.Bookmark, iconSolid: SolidIcons.Bookmark}, 
+    {id: 3, name: 'Profile', iconOutlined: OutlinedIcons.User, iconSolid: SolidIcons.User},
+    {id: 4, name: 'Stories', iconOutlined: OutlinedIcons.Stories, iconSolid: SolidIcons.Stories},
+    {id: 5, name: 'Stats', iconOutlined: OutlinedIcons.Stats, iconSolid: SolidIcons.Stats}]
+    const [active,setActive] = useState(1)
+    useEffect(() => {
+        console.log(active)
+    },[active])
     return (
         <>
         {options.map((option) => {
-            const Icon = option.icon
+            const isActive = active == option.id 
+            const Icon = isActive ? option.iconSolid : option.iconOutlined
             return(
-                <div className="flex box-border cursor-pointer opacity-50 hover:opacity-80 hover:opacity-80 border-l-1 border-transparent active:border-gray-800 h-5 mb-2.5" 
-                onClick={() => setActive(option.name)}>
+                <div
+                key={option.id}
+                className={`flex cursor-pointer text-[11px] hover:text-black h-5 mb-2.5 border-l ${
+                    isActive ? "border-black text-black"
+                : "border-transparent text-gray-500"
+                }`}
+
+                onClick={() => setActive(option.id)}>
 
                     <Icon className="size-4 ml-3" />
-                    <button className="pl-3 text-[11px] font-semibold cursor-pointer">
+                    <span className="pl-3 cursor-pointer">
                         {option.name}
-                    </button>
+                    </span>
                 </div>
                 )
             })
     }
         </>
-    )}
+    )
+}
 
 export default SideBarButton
