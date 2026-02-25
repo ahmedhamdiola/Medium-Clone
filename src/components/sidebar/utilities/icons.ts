@@ -4,7 +4,8 @@ import {
     UserIcon as UserOutlined,
     DocumentTextIcon as DocumentTextOutlined,
     ChartBarIcon as ChartBarOutlined,
-    UsersIcon as UsersOutlined
+    UsersIcon as UsersOutlined,
+    PlusIcon
 } from "@heroicons/react/24/outline"
 
 import {
@@ -14,7 +15,6 @@ import {
     DocumentTextIcon as DocumentTextSolid,
     ChartBarIcon as ChartBarSolid,
     UsersIcon as UsersSolid
-
 } from "@heroicons/react/24/solid"
 
 export const OutlinedIcons = {
@@ -23,7 +23,8 @@ export const OutlinedIcons = {
     User: UserOutlined,
     Stories: DocumentTextOutlined,
     Stats: ChartBarOutlined,
-    Following: UsersOutlined
+    Following: UsersOutlined,
+    Plus: PlusIcon
 }
 
 export const SolidIcons = {
@@ -33,5 +34,4 @@ export const SolidIcons = {
     Stories: DocumentTextSolid,
     Stats: ChartBarSolid,
     Following: UsersSolid
-
 }

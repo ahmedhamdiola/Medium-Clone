@@ -9,7 +9,7 @@ const SideBarButton = () => {
     {id: 5, name: 'Stats', iconOutlined: OutlinedIcons.Stats, iconSolid: SolidIcons.Stats}
     ]
     const secondaryOptions = [
-    {id: 6, name: 'Following', iconOutlined: OutlinedIcons.Following, iconSolid: SolidIcons.Following}
+    {id: 6, name: 'Following', iconOutlined: OutlinedIcons.Following, iconSolid: SolidIcons.Following},
     ]
     const [active,setActive] = useState(1)
     useEffect(() => {
