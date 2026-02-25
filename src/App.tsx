@@ -1,3 +1,4 @@
+import Feed from "./components/feed/Feed"
 import NavBar from "./components/navbar/NavBar"
 import SideBar from "./components/sidebar/SideBar"
 
@@ -12,7 +13,9 @@ function App() {
           <SideBar />
           </div>
         </div>
-        <div className=" w-[60%]">main</div> {/* center */}
+        <div className=" w-[60%]">
+          <Feed />
+        </div> {/* center */}
         <div className="bg-yellow-500 w-[25%]">rightbar</div> {/* rightbar */}
       </div>
     </>
