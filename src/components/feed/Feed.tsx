@@ -7,7 +7,7 @@ const Feed = () => {
     ]
     return (
         <>
-    <div className="ml-15 mt-5 sticky top-11">
+    <div className="ml-20 font-semibold mt-5 sticky top-11">
         <CategoryButton Categories={categories}/>
         <div className=" mr-15 pt-2 border-b border-gray-100 mb-4"></div>
     </div>
