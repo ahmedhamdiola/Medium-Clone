@@ -7,7 +7,7 @@ import WriteButton from "./WriteButton.tsx";
 
 const NavBar = () => {
     return (
-    <nav className="flex sticky top-0 bg-white border-b border-gray-200 justify-between">
+    <nav className="flex sticky top-0 bg-white border-b border-gray-200 justify-between z-10">
         <div className="flex items-center pb-1">
         <Bars3Icon className="size-4 cursor-pointer text-gray-400 ml-4 mt-1" />
         <Logo/>

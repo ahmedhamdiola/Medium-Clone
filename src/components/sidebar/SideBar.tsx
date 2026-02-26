@@ -1,9 +1,9 @@
 import SideBarButton from "./SideBarButton"
-import {OutlinedIcons} from "../sidebar/utilities/icons"
+import {OutlinedIcons} from "../../utilities/icons"
 const SideBar = () => {
     return (
     <div className="pt-3 ">
-        <div className="">
+        <div>
             <SideBarButton />
             <div className="flex">
                 <OutlinedIcons.Plus className="size-5 ml-4 text-gray-700"/>

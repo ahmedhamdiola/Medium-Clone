@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react"
-import {SolidIcons, OutlinedIcons} from "./utilities/icons.ts"
+import {SolidIcons, OutlinedIcons} from "../../utilities/icons.ts"
 const SideBarButton = () => {
     const mainOptions = [
     {id: 1, name: 'Home', iconOutlined: OutlinedIcons.Home, iconSolid: SolidIcons.Home},
-    {id: 2, name: 'Library', iconOutlined: OutlinedIcons.Bookmark, iconSolid: SolidIcons.Bookmark}, 
+    {id: 2, name: 'Library', iconOutlined: OutlinedIcons.Library, iconSolid: SolidIcons.Library}, 
     {id: 3, name: 'Profile', iconOutlined: OutlinedIcons.User, iconSolid: SolidIcons.User},
     {id: 4, name: 'Stories', iconOutlined: OutlinedIcons.Stories, iconSolid: SolidIcons.Stories},
     {id: 5, name: 'Stats', iconOutlined: OutlinedIcons.Stats, iconSolid: SolidIcons.Stats}

@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <NavBar />
-      <div className="flex h-1000 max-w-7xl mx-auto"> {/* main layout (PARENT)*/}
+      <div className="flex max-w-7xl mx-auto"> {/* main layout (PARENT)*/}
         <div className="w-[15%] border-r border-gray-200"> {/* sidebar */}
           <div className="sticky top-10 pt-3 pl-0.5">
           <SideBar />
